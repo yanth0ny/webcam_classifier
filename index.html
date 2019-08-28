@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+      <!-- We will be using a webcam to test -->
+      <h1 class="title">Image Classifier Web App</h1>
+      <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    </div>
+    <div>
+      <!-- We will train the data by using 4 images we captured through the webcam -->
+      <button id="class-a">Add A</button>
+      <button id="class-b">Add B</button>
+      <button id="class-c">Add C</button>
+      <button id="class-d">Add D</button>
+      <p>Capture 4 images with your webcam</p>
+      <p>and it can show you the probability of the subsequent items.<p>
+    </div>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
